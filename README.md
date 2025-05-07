@@ -1,6 +1,6 @@
-# 🧠 Mental Health Assistant Chatbot (RAG + LoRA Fine-Tuning)
+# Mental Health AI Coach (RAG + LoRA Fine-Tuning)
 
-This project implements a **personalized, empathetic mental health assistant** using a fine-tuned version of **DeepSeek-7B**. It combines **Retrieval-Augmented Generation (RAG)**, **LoRA-based fine-tuning**, and **response reranking** with Gemini 2.0 Flash.
+This project implements a **personalized, empathetic mental health coach** using a fine-tuned version of **DeepSeek-7B**. It combines **Retrieval-Augmented Generation (RAG)**, **LoRA-based fine-tuning**, and **response reranking** with Gemini 2.0 Flash.
 
 ## 🔧 Features
 
@@ -39,14 +39,6 @@ And get a grounded, personalized response pulled from real-world cases, fine-tun
 5. **Rerank with Gemini 2.0 Flash**
 6. **Return Best Response to User**
 
-## 🚀 Training Summary
-
-- LoRA Rank: `r=8`, Alpha=32
-- Target Modules: `q_proj`, `v_proj`
-- Epochs: 1–2
-- Quantization: 4-bit (NF4) with `double_quant=True`
-- Dataset: Cleaned and formatted mental health Q&A (`counselchat_lora.jsonl`)
-
 ## 🔐 Security
 
 Session-level user profile and chat history are encrypted using `Fernet` (AES 128) for safe interaction and privacy preservation.
@@ -73,4 +65,3 @@ Session-level user profile and chat history are encrypted using `Fernet` (AES 12
 
 Jwalith, MS in Data Science  
 Stony Brook University  
-Contact: [your_email@stonybrook.edu]
